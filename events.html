@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .event-img { width:100%; height:200px; object-fit:cover; display:block; }
+        .card.hover-elevate { transition: transform .18s ease, box-shadow .18s ease; }
+        .card.hover-elevate:hover { transform: translateY(-6px); box-shadow: 0 .8rem 1.2rem rgba(0,0,0,.12); }
+        .card .badge-offset { position: absolute; top: .6rem; right: .6rem; }
+    </style>
+</head>
+<body>
+    <<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">College Event Management</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav nav-tabs p-2 m-3"style="text-decoration:none;">
+                    <li class="nav-item" active>
+                        <a href="Home.html" class="nav-link"><i class="bi bi-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-light" data-bs-toggle="dropdown"><i class="bi bi-calendar-event"></i>Events</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="bg-dark dropdown-item nav-link" href="events.html"><i class="bi-calendar-event-fill"></i>Event Details</a></li>
+                                <li><a class="bg-secondary dropdown-item nav-link" href="schedule.html"><i class="bi bi-calendar"></i>Event Schedule</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><i class="bi bi-images"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link"><i class="bi bi-person-plus-fill"></i>Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><i class="bi bi-telephone-fill"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Events Cards Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Upcoming Events</h2>
+                <p class="text-muted">Explore our marquee college events and register for the ones you like.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/quiz.png" alt="Technical Quiz" class="event-img card-img-top">
+                        <span class="badge bg-warning text-dark badge-offset">Free</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Quiz</h5>
+                            <p class="card-text text-muted">A quick-paced quiz testing core CS concepts and problem solving. Teams and individuals welcome — sharpen your subject knowledge and win exciting prizes.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 15 March</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Main Auditorium</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/hackthon.avif" alt="Hackathon" class="event-img card-img-top">
+                        <span class="badge bg-info text-dark badge-offset">Team</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Hackathon</h5>
+                            <p class="card-text text-muted">An intense 24-hour build event — innovate, prototype, and pitch. Mentors will guide teams to deliver working demos by the deadline.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 22 March</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Innovation Lab</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/posterPresentation.webp" alt="Poster Presentation" class="event-img card-img-top">
+                        <span class="badge bg-secondary text-light badge-offset">Open Call</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Poster Presentation</h5>
+                            <p class="card-text text-muted">Showcase research and creative projects on poster boards. Presenters receive feedback from faculty and industry judges.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 28 March</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Exhibition Hall</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/codingContest.webp" alt="Coding Contest" class="event-img card-img-top">
+                        <span class="badge bg-success text-light badge-offset">Competitive</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Coding Contest</h5>
+                            <p class="card-text text-muted">Timed algorithmic challenges to test speed and accuracy. Ideal for those who love competitive programming and problem solving.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 5 April</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Computer Lab</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/projectExpo.png" alt="Project Expo" class="event-img card-img-top">
+                        <span class="badge bg-primary text-light badge-offset">Showcase</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Project Expo</h5>
+                            <p class="card-text text-muted">A curated display of student projects spanning hardware, software, and multidisciplinary work. Network with peers and recruiters during the expo.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 12 April</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Innovation Center</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-elevate position-relative">
+                        <img src="images/culturalFest.avif" alt="Cultural Fest" class="event-img card-img-top">
+                        <span class="badge bg-danger text-light badge-offset">Festival</span>
+                        <div class="card-body">
+                            <h5 class="card-title">Cultural Fest</h5>
+                            <p class="card-text text-muted">Music, dance, food stalls and competitions — a celebration of campus culture. Open to all students and families.</p>
+                            <p class="card-text text-muted mb-1"><strong>Date:</strong> 20 April</p>
+                            <p class="card-text text-muted mb-3"><strong>Venue:</strong> Open Grounds</p>
+                            <a href="registration.html" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
