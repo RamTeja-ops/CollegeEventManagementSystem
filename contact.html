@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">College Event Management</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav nav-tabs p-2 m-3"style="text-decoration:none;">
+                    <li class="nav-item" active>
+                        <a href="Home.html" class="nav-link"><i class="bi bi-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-light" data-bs-toggle="dropdown"><i class="bi bi-calendar-event"></i>Events</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="bg-dark dropdown-item nav-link" href="events.html"><i class="bi-calendar-event-fill"></i>Event Details</a></li>
+                                <li><a class="bg-secondary dropdown-item nav-link" href="schedule.html"><i class="bi bi-calendar"></i>Event Schedule</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link"><i class="bi bi-images"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registration.html" class="nav-link"><i class="bi bi-person-plus-fill"></i>Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link"><i class="bi bi-telephone-fill"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact Section -->
+    <section class="contact bg-light py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Contact Us</h1>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h4 class="mb-4"><i class="bi bi-chat-left-text"></i> Send us a Message</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Send Message</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h4 class="mb-4"><i class="bi bi-person-circle"></i> Coordinator Details</h4>
+                    
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-briefcase"></i> Event Coordinator</h5>
+                            <p class="card-text">
+                                <strong>Name:</strong>Rakesh<br>
+                                <strong>Email:</strong> rakesh@cvr.ac.in<br>
+                                <strong>Phone:</strong> +91 6718818199<br>
+                                <strong>Department:</strong> Events Management
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-briefcase"></i> Co-Coordinator</h5>
+                            <p class="card-text">
+                                <strong>Name:</strong>Ramesh<br>
+                                <strong>Email:</strong> ramesh@cvr.ac.in<br>
+                                <strong>Phone:</strong> +91 7156161999<br>
+                                <strong>Department:</strong> Student Affairs
+                            </p>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-5 mb-4"><i class="bi bi-share"></i> Follow Us</h4>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.bing.com/ck/a?!&&p=4aa42f06c99c0737f89c6e851e7e701ef3228e9fd0ef83b05a6c52e9c4e05a2cJmltdHM9MTc4MDk2MzIwMA&ptn=3&ver=2&hsh=4&fclid=11261614-ab7e-6fab-22e0-0369aa966eb2&psq=cvr+college+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2N2ci5jb2UvYWJvdXQv" target="_blank" class="btn btn-outline-dark btn-lg"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=8c70b2b470b494808898302c00e714e523dd250b9fd70ee1724999005f1a4131JmltdHM9MTc4MDk2MzIwMA&ptn=3&ver=2&hsh=4&fclid=11261614-ab7e-6fab-22e0-0369aa966eb2&psq=cvr+college+x+twitter&u=a1aHR0cHM6Ly9jdnIuYWMuaW4vaG9tZTQv" target="_blank" class="btn btn-outline-dark btn-lg"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=5380780ddcc23c7ba29cf7401efd2353d9fbc5a02d2bf9820b0bbe03aebc3acdJmltdHM9MTc4MDk2MzIwMA&ptn=3&ver=2&hsh=4&fclid=11261614-ab7e-6fab-22e0-0369aa966eb2&psq=cvr+college+instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jdnJfY29tbXVuaXR5Lw" target="_blank" class="btn btn-outline-dark btn-lg"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=31c05caa99d78355cccfa908fa15f489a8e97342786a02b90842e826f2060d39JmltdHM9MTc4MDk2MzIwMA&ptn=3&ver=2&hsh=4&fclid=11261614-ab7e-6fab-22e0-0369aa966eb2&psq=cvr+college+linkedin&u=a1aHR0cHM6Ly9pbi5saW5rZWRpbi5jb20vc2Nob29sL2N2cmNvZS8" target="_blank" class="btn btn-outline-dark btn-lg"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.bing.com/ck/a?!&&p=e22cf498ac144656885b3bd48ae4cd9fe7341475e2c3025fe5d63346d6435f2aJmltdHM9MTc4MDk2MzIwMA&ptn=3&ver=2&hsh=4&fclid=11261614-ab7e-6fab-22e0-0369aa966eb2&psq=cvr+college+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vQGN2cmNvbGxlZ2VvZmVuZ2luZWVyaW5nNjIyNy9zdHJlYW1z" target="_blank" class="btn btn-outline-dark btn-lg"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
